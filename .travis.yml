@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: uNknJ9XEXcErWXAA5Hf7PmHMrHfZxHtALtiY30R8fmRLyvat1pIXCCWytLHDSuwQLst7J/q3kmK4SaV9c/0Lug+7XRB2HmAzgSWv1NYN73P/yKdqAdegE1mYYx1O+HN+OrzjkXuWmanu0uLGgZzAh/FgbGgcsCbBzAUJfPAJdquymIVImiPtMzFcIE4zthit9B41XtyVmp9nox6RG5ugVdBjgDPOUL6HFthn+Z6HjIFX6/v9UCBA8JCrdKD1aIkNaNUNDRwkEs5ApvdQpRdn9h3swRcf7jwQ8PkUZ9D+B8frd/lWWx0VvRBWHhDFHbjIn7l2MeLRr3WGWe0xOh3oFWRBKJ2Ie8fAaak44at/32/UybtScVOOs5JGsabA5Lbqfm1xIYpcv0i8cAnVQHdriCNJTB/HBYkJyT7RMKBQuyylxrxts9wQPWPtHU4lCjUZPWNGMyBRsHRVlquiD9Al05uHattB4sIfIFZGgHfEc0KIAXi3J9fZfTbdUfOowuyWgUxWGJg57lrPID6Dz9Jw/Bko/VO2Vb0YALQlNAhIz2/nUM64de75/OCs9O4NYgMVu04CZQUpnUFBG2jLL1zrhRWKJLunhKvu0YVTzzB/tko0nQ94yAazA0KUNvpYImlPXrm8n7Y8KwEVsiBQR01Jvlk6a+r3Y3sOIv679rtFMjI=
+  app: obscure-brushlands-69192
+  on:
+    repo: rrcheatham/react-hot-cold-1
